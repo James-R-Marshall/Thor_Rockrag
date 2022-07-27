@@ -1,3 +1,13 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://sc_TitleScreen/TitleFloor.obj" type="ArrayMesh" id=1]
 
 [node name="TitleScreen" type="Spatial"]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.956458, -0.291871, 0, 0.291871, 0.956458, 0, 0, 6.98762 )
+
+[node name="TitleFloor" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0795097, -0.232153, 2.13032 )
+mesh = ExtResource( 1 )
+material/0 = null
