@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/TitleFloor_DefaultMaterial_BaseColor.png-f0d3b68b2991bbc5c943c697b4b723b4.s3tc.stex"
-path.etc2="res://.import/TitleFloor_DefaultMaterial_BaseColor.png-f0d3b68b2991bbc5c943c697b4b723b4.etc2.stex"
+path.s3tc="res://.import/TitleFloor_DefaultMaterial_BaseColor.png-4e97b48e6d02aa0705cf67f328525bdf.s3tc.stex"
+path.etc2="res://.import/TitleFloor_DefaultMaterial_BaseColor.png-4e97b48e6d02aa0705cf67f328525bdf.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://TitleScreen/Mesh/TitleFloor/TitleFloor_DefaultMaterial_BaseColor.png"
-dest_files=[ "res://.import/TitleFloor_DefaultMaterial_BaseColor.png-f0d3b68b2991bbc5c943c697b4b723b4.s3tc.stex", "res://.import/TitleFloor_DefaultMaterial_BaseColor.png-f0d3b68b2991bbc5c943c697b4b723b4.etc2.stex" ]
+source_file="res://sc_TitleScreen/Mesh/TitleFloor/TitleFloor_DefaultMaterial_BaseColor.png"
+dest_files=[ "res://.import/TitleFloor_DefaultMaterial_BaseColor.png-4e97b48e6d02aa0705cf67f328525bdf.s3tc.stex", "res://.import/TitleFloor_DefaultMaterial_BaseColor.png-4e97b48e6d02aa0705cf67f328525bdf.etc2.stex" ]
 
 [params]
 

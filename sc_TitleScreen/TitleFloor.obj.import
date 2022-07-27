@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/TitleFloor.obj-2439d3207f25836accec50dd17e55401.mesh"
+
+[deps]
+
+files=[ "res://.import/TitleFloor.obj-2439d3207f25836accec50dd17e55401.mesh" ]
+
+source_file="res://sc_TitleScreen/TitleFloor.obj"
+dest_files=[ "res://.import/TitleFloor.obj-2439d3207f25836accec50dd17e55401.mesh", "res://.import/TitleFloor.obj-2439d3207f25836accec50dd17e55401.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

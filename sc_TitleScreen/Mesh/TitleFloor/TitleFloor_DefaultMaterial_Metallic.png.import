@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/TitleFloor_DefaultMaterial_Metallic.png-e54a501bcae8e6873ef4cf23df7d1472.s3tc.stex"
-path.etc2="res://.import/TitleFloor_DefaultMaterial_Metallic.png-e54a501bcae8e6873ef4cf23df7d1472.etc2.stex"
+path.s3tc="res://.import/TitleFloor_DefaultMaterial_Metallic.png-d4babbff79de64532005a9cdc38021a4.s3tc.stex"
+path.etc2="res://.import/TitleFloor_DefaultMaterial_Metallic.png-d4babbff79de64532005a9cdc38021a4.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://TitleScreen/Mesh/TitleFloor/TitleFloor_DefaultMaterial_Metallic.png"
-dest_files=[ "res://.import/TitleFloor_DefaultMaterial_Metallic.png-e54a501bcae8e6873ef4cf23df7d1472.s3tc.stex", "res://.import/TitleFloor_DefaultMaterial_Metallic.png-e54a501bcae8e6873ef4cf23df7d1472.etc2.stex" ]
+source_file="res://sc_TitleScreen/Mesh/TitleFloor/TitleFloor_DefaultMaterial_Metallic.png"
+dest_files=[ "res://.import/TitleFloor_DefaultMaterial_Metallic.png-d4babbff79de64532005a9cdc38021a4.s3tc.stex", "res://.import/TitleFloor_DefaultMaterial_Metallic.png-d4babbff79de64532005a9cdc38021a4.etc2.stex" ]
 
 [params]
 
