@@ -1,12 +1,17 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://sc_TitleScreen/TitleFloor.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://sc_TitleScreen/Mesh/TitleFloor/TitleFloor.tres" type="Material" id=2]
+[ext_resource path="res://sc_TitleScreen/sound/sfx_Title_softwind.mp3" type="AudioStream" id=3]
 
 [node name="TitleScreen" type="Spatial"]
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.956458, -0.291871, 0, 0.291871, 0.956458, 0, 0, 6.98762 )
+
+[node name="Wind" type="AudioStreamPlayer" parent="Camera"]
+stream = ExtResource( 3 )
+autoplay = true
 
 [node name="TitleFloor" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0795097, -0.232153, 2.13032 )
