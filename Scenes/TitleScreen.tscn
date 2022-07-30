@@ -1,9 +1,61 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://sc_TitleScreen/TitleFloor.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://sc_TitleScreen/Mesh/TitleFloor/TitleFloor.tres" type="Material" id=2]
 [ext_resource path="res://sc_TitleScreen/sound/sfx_Title_softwind.mp3" type="AudioStream" id=3]
 [ext_resource path="res://Scenes/UI.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Common/DevilsAnus/cloudys.png" type="Texture" id=5]
+[ext_resource path="res://Common/DevilsAnus/devilsbutt.obj" type="ArrayMesh" id=6]
+
+[sub_resource type="Shader" id=1]
+code = "// NOTE: Shader automatically converted from Godot Engine 3.4.4.stable.mono's SpatialMaterial.
+
+shader_type spatial;
+render_mode blend_mix,depth_draw_opaque,cull_back,diffuse_burley,specular_schlick_ggx;
+uniform vec4 albedo : hint_color;
+uniform sampler2D texture_albedo : hint_albedo;
+uniform float specular;
+uniform float metallic;
+uniform float roughness : hint_range(0,1);
+uniform float point_size : hint_range(0,128);
+uniform vec3 uv1_scale;
+uniform vec3 uv1_offset;
+uniform vec3 uv2_scale;
+uniform vec3 uv2_offset;
+uniform vec2 Direction = vec2(1.0,0.0);
+uniform float Speed = 0.02;
+
+void vertex() {
+	UV=UV*uv1_scale.xy+uv1_offset.xy;
+}
+
+
+
+
+void fragment() {
+	vec2 base_uv = UV;
+	vec4 albedo_tex = texture(texture_albedo,UV + (Direction * TIME * Speed));
+	ALBEDO = albedo.rgb * albedo_tex.rgb;
+	METALLIC = metallic;
+	ROUGHNESS = roughness;
+	SPECULAR = specular;
+}
+"
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+shader_param/albedo = Color( 1, 1, 1, 1 )
+shader_param/specular = 0.5
+shader_param/metallic = 0.0
+shader_param/roughness = 1.0
+shader_param/point_size = 1.0
+shader_param/uv1_scale = Vector3( 1, 1, 1 )
+shader_param/uv1_offset = Vector3( 0, 0, 0 )
+shader_param/uv2_scale = Vector3( 1, 1, 1 )
+shader_param/uv2_offset = Vector3( 0, 0, 0 )
+shader_param/Direction = Vector2( 1, 0 )
+shader_param/Speed = 0.02
+shader_param/texture_albedo = ExtResource( 5 )
 
 [node name="TitleScreen" type="Spatial"]
 
@@ -20,3 +72,21 @@ autoplay = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0795097, -0.232153, 2.13032 )
 mesh = ExtResource( 1 )
 material/0 = ExtResource( 2 )
+
+[node name="devilsbutt" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.55632, 8.67991, -15.2485 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../TitleFloor")
+material/0 = SubResource( 2 )
+
+[node name="devilsbutt2" type="MeshInstance" parent="."]
+transform = Transform( 0.117063, 0, 0, 0, 0.274924, 0, 0, 0, 0.117063, 0.491112, 4.95552, -24.8758 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../TitleFloor")
+material/0 = SubResource( 2 )
+
+[node name="devilsbutt3" type="MeshInstance" parent="."]
+transform = Transform( -0.342145, 0, 0, 0, 0.795365, 0, 0, 0, -0.342145, -30.1937, 12.4988, -29.8829 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../TitleFloor")
+material/0 = SubResource( 2 )
