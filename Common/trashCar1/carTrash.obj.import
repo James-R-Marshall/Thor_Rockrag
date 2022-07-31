@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/carTrash.obj-fb3293d4a5925dc6abd8eda6daae5d22.mesh"
+
+[deps]
+
+files=[ "res://.import/carTrash.obj-fb3293d4a5925dc6abd8eda6daae5d22.mesh" ]
+
+source_file="res://Common/trashCar1/carTrash.obj"
+dest_files=[ "res://.import/carTrash.obj-fb3293d4a5925dc6abd8eda6daae5d22.mesh", "res://.import/carTrash.obj-fb3293d4a5925dc6abd8eda6daae5d22.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
