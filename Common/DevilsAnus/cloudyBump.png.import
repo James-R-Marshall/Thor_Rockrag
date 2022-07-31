@@ -18,11 +18,11 @@ dest_files=[ "res://.import/cloudyBump.png-7e300737bac32bc058eedb164271a7ec.s3tc
 
 compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_mode=1
 compress/bptc_ldr=0
 compress/normal_map=1
-flags/repeat=true
-flags/filter=false
+flags/repeat=1
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=1
